@@ -2,41 +2,40 @@
 
 # TypeScript Call Graph
 
-This **CLI** will create an interactive graph of all the functions and their calls in the TypeScript files you provide.
+该**CLI**将为TypeScript文件创建并生成所有的函数调用关系图。
 
-⚠️ This is a work in progress 🚧 More visualization contributions are welcome.
+⚠️ 这是一项正在进行的工作🚧 欢迎更多可视化贡献
 
 ![image](https://user-images.githubusercontent.com/17264277/85908941-62ba6d00-b7e5-11ea-8e50-2686990aa4f5.png)
 
-## How to use
+## 如何使用
 
-Install globally:
+全局安装
 
 ```sh
 npm install -g typescript-call-graph
 ```
 
-Inside any directory, run:
+在任何的文件目录，运行:
 
 ```sh
 tcg
 ```
-
-It will remind you how to use the CLI: you need to provide specific files, or globs (wildcard paths):
+它将提醒你如何使用CLI: 您需要指定特定的文件或全局的（通配符路径）：
 
 ```sh
 tcg myFile.ts folder/* anotherFolder/**/*
 ```
 
-## Developing
+## 开发
 
-Clone repository. Edit `index.ts` and/or `extract.ts` and run `npm start` to build changes, `npm test` to run CLI against files in this repository.
+克隆仓库. 编辑 `index.ts` 或者 `extract.ts` 然后执行 `npm start` 构建以生成更改, 执行 `npm test` 来对仓库中的文件运行CLI.
 
-Suggestions or PRs for how to improve this CLI are very welcome 	🙇
+非常欢迎有关如何改进此CLI的建议或PR。
 
-You may also edit this repository as you'd like and install your custom version of `tcg` command with `npm run global`
+您还可以根据需要编辑此存储库，并使用`npm run global`安装自定义版本的`tcg`命令。
 
-### Thank you
+### 感谢
 
 - [Matteo Abrate](https://observablehq.com/@nitaku/tangled-tree-visualization-ii) for the _tangled tree visualization_
 - [Mike Bostock](https://observablehq.com/@d3/arc-diagram) for the _arc diagram_
